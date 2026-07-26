@@ -372,6 +372,12 @@ section {
   font-size: 0.98rem;
 }
 .cert-list li:last-child { border-bottom: none; }
+.cert-list a {
+  color: var(--blue);
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+.cert-list a:hover { opacity: 0.7; text-decoration: underline; }
 
 /* ---------- Contact ---------- */
 .contact {
