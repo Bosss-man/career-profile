@@ -276,6 +276,42 @@ section {
   font-size: 0.98rem;
 }
 
+.tech-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.6rem;
+}
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.75rem 0.35rem 0.35rem;
+  border-radius: 100px;
+  background: #fff;
+  border: 1px solid var(--line);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+.tech-chip.tech-chip-text {
+  padding-left: 0.75rem;
+}
+.icon-tile {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-tile svg {
+  width: 12px;
+  height: 12px;
+}
+
 .job-body ul {
   display: flex;
   flex-direction: column;
@@ -490,5 +526,8 @@ section {
   .nav-cta { background: #fff; color: #000 !important; }
   .btn-ghost { background: rgba(255,255,255,0.08); }
   .pills span { background: #2c2c2e; border-color: #3a3a3c; color: var(--ink); }
+  .tech-chip { background: #2c2c2e; border-color: #3a3a3c; color: var(--ink); }
+  .icon-tile { background: #3a3a3c; }
+  .icon-invert { fill: #f5f5f7 !important; }
   .hero h1 { background: linear-gradient(135deg, #f5f5f7 30%, #4da3ff 70%, #cb7ce8 100%); -webkit-background-clip: text; background-clip: text; }
 }
