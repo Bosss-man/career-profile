@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books — TS Kishorkrishna</title>
+<meta name="description" content="Books on data engineering TS Kishorkrishna has read, and what he took away from each.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="books.css">
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">TS<span>.</span>K</a>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="books.html" class="active">Books</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="books-hero reveal">
+  <p class="eyebrow">Reading Log</p>
+  <h1>Books</h1>
+  <p class="books-sub">A running list of what I've read on data engineering, and what each one actually taught me.</p>
+</header>
+
+<section class="books-list">
+
+  <article class="book-card reveal">
+    <div class="book-meta">
+      <span class="book-status status-read">Read</span>
+      <h2>Fundamentals of Data Engineering</h2>
+      <p class="book-author">Joe Reis &amp; Matt Housley</p>
+    </div>
+    <div class="book-body">
+      <p>This is where the overall picture clicked for me — what data engineering actually is as a discipline,
+      not just a stack of tools. It laid out the entire lifecycle end to end: generation, storage, ingestion,
+      transformation, and serving, and how each stage connects to the next. It also gave me a sense of how the
+      field evolved — from the Hadoop era to the modern cloud/lakehouse stack — and a mental map of the tools
+      generally used at each stage, which made it much easier to place any new tool I ran into afterward.</p>
+    </div>
+  </article>
+
+  <article class="book-card reveal">
+    <div class="book-meta">
+      <span class="book-status status-read">Read</span>
+      <h2>Spark: The Definitive Guide</h2>
+      <p class="book-author">Bill Chambers &amp; Matei Zaharia</p>
+    </div>
+    <div class="book-body">
+      <p>Where the first book gave me the map, this one took me under the hood of the engine I use daily.
+      It gave me a much deeper understanding of how Spark actually functions and is built — the
+      catalyst optimizer, how jobs get planned and executed, and why certain patterns (partitioning, joins,
+      shuffles) behave the way they do. It shifted how I write Spark code, from "make it work" to reasoning
+      about what the engine will actually do with it.</p>
+    </div>
+  </article>
+
+  <article class="book-card reveal">
+    <div class="book-meta">
+      <span class="book-status status-reading">Currently reading</span>
+      <h2>System Design Interview — An Insider's Guide, Volume 1</h2>
+      <p class="book-author">Alex Xu</p>
+    </div>
+    <div class="book-body">
+      <p>Working through this one now to sharpen the system design side of things — how to think about
+      scalability, trade-offs, and architecture decisions more deliberately, beyond what comes up naturally
+      on the job.</p>
+    </div>
+  </article>
+
+</section>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> TS Kishorkrishna. Bangalore, Karnataka, India.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
