@@ -445,7 +445,7 @@ section {
 }
 .btn-light {
   background: #fff;
-  color: var(--ink);
+  color: #1d1d1f;
 }
 .btn-outline-light {
   background: rgba(255,255,255,0.15);
